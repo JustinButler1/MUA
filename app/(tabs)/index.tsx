@@ -2,13 +2,13 @@ import { StyleSheet } from 'react-native';
 
 import EditScreenInfo from '@/components/EditScreenInfo';
 import { Text, View } from '@/components/Themed';
-import TestComp from '@/components/ui/testcomp';
+import { Post, ImagePost, TextPost } from '@/components/ui/Posts';
 
 export default function Home() {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Home</Text>
-      <TestComp />
+      <Post/>
       <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
       <EditScreenInfo path="app/(tabs)/index.tsx" />
     </View>
