@@ -2,6 +2,7 @@ import { View, Text, StyleSheet } from 'react-native'
 import React from 'react'
 import PostHeader from '@/components/ui/PostHeader'
 import PostActions from '@/components/ui/PostActions';
+import FeedImage from '@/components/FeedImage';
 
 interface PostProps {
     content?: React.ComponentType<any>;
@@ -17,13 +18,13 @@ const Post: React.FC<PostProps> = ({content: ContentComponent}) => {
     )
 }
 
-const ImagePost = () => {
+const ImagePost: React.FC<{ url: string; resolution?: string }> = ({ url, resolution }) => {
     return (
         <View>
-            <Text>ImagePost</Text>
+            <Post content={() => <FeedImage url={url} resolution={resolution} />} />
         </View>
-    )
-}
+    );
+};
 
 const TextPost = () => {
     return (
@@ -48,8 +49,10 @@ const styles = StyleSheet.create({
         borderStyle: 'solid',
         borderWidth: 1,
         borderColor: '#ccc',
-        borderRadius: 5,
-        padding: 10, // Padding inside the post container
+        borderRadius: 10,
+        padding: 10,
+        marginVertical: 10,
+        maxWidth: 468,
     },
 });
 
