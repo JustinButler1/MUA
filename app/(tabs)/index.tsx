@@ -1,7 +1,7 @@
-import { FlatList, StyleSheet } from 'react-native';
+import { StyleSheet } from 'react-native';
 
 import EditScreenInfo from '@/components/EditScreenInfo';
-import { Text, View, ScrollView } from '@/components/Themed';
+import { Text, View, ScrollView, FlatList } from '@/components/Themed';
 import { Post, ImagePost, TextPost } from '@/components/ui/Posts';
 
 

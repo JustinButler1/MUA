@@ -3,7 +3,7 @@
  * https://docs.expo.io/guides/color-schemes/
  */
 
-import { Text as DefaultText, View as DefaultView, ScrollView as DefaultScrollView } from 'react-native';
+import { Text as DefaultText, View as DefaultView, ScrollView as DefaultScrollView, FlatList as DefaultFlatList, FlatListProps } from 'react-native';
 
 import Colors from '@/constants/Colors';
 import { useColorScheme } from './useColorScheme';
@@ -49,4 +49,11 @@ export function ScrollView(props: ViewProps) {
   const backgroundColor = useThemeColor({ light: lightColor, dark: darkColor }, 'background');
 
   return <DefaultScrollView contentContainerStyle={[{ backgroundColor, padding: 20 }, style]} {...otherProps} />;
+}
+
+export function FlatList(props: FlatListProps<any> & ViewProps) {
+  const { style, lightColor, darkColor, ...otherProps } = props;
+  const backgroundColor = useThemeColor({ light: lightColor, dark: darkColor }, 'background');
+
+  return <DefaultFlatList contentContainerStyle={[{ backgroundColor, padding: 20 }, style]} {...otherProps} />;
 }
