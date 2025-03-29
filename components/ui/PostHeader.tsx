@@ -1,11 +1,11 @@
 import { View, Text, StyleSheet } from 'react-native'
 import React from 'react'
-import AvatarImage from '@/components/AvatarImage'
+import CircleImage from '@/components/CircleImage'
 
 const PostHeader = () => {
     return (
         <View style={styles.container}>
-            <AvatarImage />
+            <CircleImage size={35}/>
             <View style={styles.text_container}>
                 <Text style={styles.account_name}>John Doe</Text>
                 <Text style={styles.post_time}>2 hours ago</Text>

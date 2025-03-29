@@ -19,6 +19,54 @@ const DATA = [
     id: '58694a0f-3da1-471f-bd96-145571e29d723d',
     url: 'https://placehold.co/300',
   },
+  {
+    id: 'bd7acbea-c1b1-46c2-aed5-3ad53abb28baa',
+    url: 'https://placehold.co/300',
+  },
+  {
+    id: '3ac68afc-c605-48d3-a4f8-fbd91aa97f63b',
+    url: 'https://placehold.co/300',
+  },
+  {
+    id: '58694a0f-3da1-471f-bd96-145571e29d72c',
+    url: 'https://placehold.co/300',
+  },
+  {
+    id: '58694a0f-3da1-471f-bd96-145571e29d723d',
+    url: 'https://placehold.co/300',
+  },
+  {
+    id: 'bd7acbea-c1b1-46c2-aed5-3ad53abb28baa',
+    url: 'https://placehold.co/300',
+  },
+  {
+    id: '3ac68afc-c605-48d3-a4f8-fbd91aa97f63b',
+    url: 'https://placehold.co/300',
+  },
+  {
+    id: '58694a0f-3da1-471f-bd96-145571e29d72c',
+    url: 'https://placehold.co/300',
+  },
+  {
+    id: '58694a0f-3da1-471f-bd96-145571e29d723d',
+    url: 'https://placehold.co/300',
+  },
+  {
+    id: 'bd7acbea-c1b1-46c2-aed5-3ad53abb28baa',
+    url: 'https://placehold.co/300',
+  },
+  {
+    id: '3ac68afc-c605-48d3-a4f8-fbd91aa97f63b',
+    url: 'https://placehold.co/300',
+  },
+  {
+    id: '58694a0f-3da1-471f-bd96-145571e29d72c',
+    url: 'https://placehold.co/300',
+  },
+  {
+    id: '58694a0f-3da1-471f-bd96-145571e29d723d',
+    url: 'https://placehold.co/300',
+  },
 ];
 
 export default function Chats() {
@@ -30,10 +78,6 @@ export default function Chats() {
         renderItem={({ item }) => <ChatSection />}
         keyExtractor={item => item.id}
       />
-      {/* These ChatSections should be placed inside FlatList */}
-      {/* <ChatSection /> */}
-      {/* <ChatSection /> */}
-      {/* <ChatSection /> */}
     </View>
   );
 }

@@ -1,11 +1,11 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
-import AvatarImage from '../AvatarImage'
+import CircleImage from '../CircleImage'
 
 const ChatMessage = () => {
     return (
         <View style={styles.container}>
-            <AvatarImage />
+            <CircleImage size={35}/>
             <View style={styles.text_container}>
                 <Text style={styles.account_name}>John Doe</Text>
                 <Text style={styles.chat_text}>
