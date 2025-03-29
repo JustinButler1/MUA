@@ -30,10 +30,6 @@ export default function Chats() {
         renderItem={({ item }) => <ChatSection />}
         keyExtractor={item => item.id}
       />
-      {/* These ChatSections should be placed inside FlatList */}
-      {/* <ChatSection /> */}
-      {/* <ChatSection /> */}
-      {/* <ChatSection /> */}
     </View>
   );
 }
