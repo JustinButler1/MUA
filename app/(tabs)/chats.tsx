@@ -4,67 +4,67 @@ import ChatSection from '@/components/ui/ChatSection';
 
 const DATA = [
   {
-    id: 'bd7acbea-c1b1-46c2-aed5-3ad53abb28baa',
+    id: '1',
     url: 'https://placehold.co/300',
   },
   {
-    id: '3ac68afc-c605-48d3-a4f8-fbd91aa97f63b',
+    id: '2',
     url: 'https://placehold.co/300',
   },
   {
-    id: '58694a0f-3da1-471f-bd96-145571e29d72c',
+    id: '3',
     url: 'https://placehold.co/300',
   },
   {
-    id: '58694a0f-3da1-471f-bd96-145571e29d723d',
+    id: '4',
     url: 'https://placehold.co/300',
   },
   {
-    id: 'bd7acbea-c1b1-46c2-aed5-3ad53abb28baa',
+    id: '5',
     url: 'https://placehold.co/300',
   },
   {
-    id: '3ac68afc-c605-48d3-a4f8-fbd91aa97f63b',
+    id: '6',
     url: 'https://placehold.co/300',
   },
   {
-    id: '58694a0f-3da1-471f-bd96-145571e29d72c',
+    id: '7',
     url: 'https://placehold.co/300',
   },
   {
-    id: '58694a0f-3da1-471f-bd96-145571e29d723d',
+    id: '8',
     url: 'https://placehold.co/300',
   },
   {
-    id: 'bd7acbea-c1b1-46c2-aed5-3ad53abb28baa',
+    id: '9',
     url: 'https://placehold.co/300',
   },
   {
-    id: '3ac68afc-c605-48d3-a4f8-fbd91aa97f63b',
+    id: '10',
     url: 'https://placehold.co/300',
   },
   {
-    id: '58694a0f-3da1-471f-bd96-145571e29d72c',
+    id: '12',
     url: 'https://placehold.co/300',
   },
   {
-    id: '58694a0f-3da1-471f-bd96-145571e29d723d',
+    id: '13',
     url: 'https://placehold.co/300',
   },
   {
-    id: 'bd7acbea-c1b1-46c2-aed5-3ad53abb28baa',
+    id: '14',
     url: 'https://placehold.co/300',
   },
   {
-    id: '3ac68afc-c605-48d3-a4f8-fbd91aa97f63b',
+    id: '15',
     url: 'https://placehold.co/300',
   },
   {
-    id: '58694a0f-3da1-471f-bd96-145571e29d72c',
+    id: '16',
     url: 'https://placehold.co/300',
   },
   {
-    id: '58694a0f-3da1-471f-bd96-145571e29d723d',
+    id: '17',
     url: 'https://placehold.co/300',
   },
 ];
