@@ -53,11 +53,9 @@ const styles = StyleSheet.create({
     chat_name: {
         fontSize: 16,
         fontWeight: 'bold',
-        // You can add more styling here for the chat name
     },
     chat_message: {
         fontSize: 14,
-        color: '#555', // Lighter color for the message
-        // You can add more styling here for the chat message
+        color: '#555',
     },
 })

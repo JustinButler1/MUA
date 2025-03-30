@@ -85,19 +85,10 @@ export default function Chats() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    width: '100%', // Ensuring the container takes up full width
+    width: '100%',
   },
   flatListContainer: {
     flexGrow: 1,
-    width: '100%', // Make sure the FlatList content container uses full width
-  },
-  title: {
-    fontSize: 20,
-    fontWeight: 'bold',
-  },
-  separator: {
-    marginVertical: 30,
-    height: 1,
-    width: '80%',
+    width: '100%',
   },
 });

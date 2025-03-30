@@ -1,8 +1,6 @@
 import { StyleSheet } from 'react-native';
-
-import EditScreenInfo from '@/components/EditScreenInfo';
-import { Text, View, ScrollView, FlatList } from '@/components/Themed';
-import { Post, ImagePost, TextPost } from '@/components/ui/Posts';
+import { View, FlatList } from '@/components/Themed';
+import { ImagePost, TextPost } from '@/components/ui/Posts';
 
 
 const DATA = [
@@ -43,14 +41,5 @@ const styles = StyleSheet.create({
   container: {
     alignItems: 'center',
     justifyContent: 'center',
-  },
-  title: {
-    fontSize: 20,
-    fontWeight: 'bold',
-  },
-  separator: {
-    marginVertical: 30,
-    height: 1,
-    width: '80%',
   },
 });

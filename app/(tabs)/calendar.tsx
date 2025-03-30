@@ -1,10 +1,7 @@
 import { StyleSheet } from 'react-native';
-
-import EditScreenInfo from '@/components/EditScreenInfo';
 import { FlatList, Text, View } from '@/components/Themed';
 import CalendarEventCard from '@/components/ui/CalendarEventCard';
 import FontAwesome from '@expo/vector-icons/FontAwesome';
-import { useState } from 'react';
 
 const DATA = [
   {
@@ -109,8 +106,6 @@ const DATA = [
 ];
 
 export default function Calendar() {
-  const [selectedDate, setSelectedDate] = useState('');
-
   return (
     <View style={styles.container}>
       <View style={styles.week_selector}>
@@ -121,7 +116,6 @@ export default function Calendar() {
       <FlatList style={{ width: '100%' }}
         data={DATA}
         renderItem={({ item, index }) => {
-          console.log(DATA[index].date);
           return (
             <>
               {index === 0 &&

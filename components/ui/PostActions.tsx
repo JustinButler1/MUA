@@ -26,9 +26,9 @@ export default PostActions
 const styles = StyleSheet.create({
     button_container: {
         flexDirection: 'row',
-        justifyContent: 'space-around', // Distributes space evenly between the buttons
-        alignItems: 'center', // Aligns items vertically in the center
-        padding: 10, // Padding around the buttons
+        justifyContent: 'space-around',
+        alignItems: 'center',
+        padding: 10,
     },
     icon: {
         marginRight: 10,

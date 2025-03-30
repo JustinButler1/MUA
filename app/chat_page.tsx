@@ -1,7 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import { Platform, StyleSheet } from 'react-native';
 
-import { FlatList, Text, View } from '@/components/Themed';
+import { FlatList, View } from '@/components/Themed';
 import ChatMessage from '@/components/ui/ChatMessage';
 
 const DATA = [

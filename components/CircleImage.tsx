@@ -5,7 +5,7 @@ const CircleImage = ({ size }: { size: number }) => {
     return (
         <View style={styles.container}>
             <Image 
-                source={{ uri: `https://i.pravatar.cc/${size}` }} // Replace with your image URL
+                source={{ uri: `https://i.pravatar.cc/${size}` }}
                 style={styles.image}
             />
         </View>
@@ -18,9 +18,9 @@ const styles = StyleSheet.create({
         alignItems: 'center',
     },
     image: {
-        width: 35, // Adjust the size as needed
-        height: 35, // Adjust the size as needed
-        borderRadius: 50, // Half of the width and height to make it circular
+        width: 35,
+        height: 35,
+        borderRadius: 50,
     },
 });
 
