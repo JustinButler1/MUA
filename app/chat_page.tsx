@@ -27,6 +27,7 @@ export default function ChatPage() {
   return (
     <View style={styles.container}>
       <FlatList
+        contentContainerStyle={styles.flatListContainer}
         data={DATA}
         renderItem={({ item }) => <ChatMessage />}
         keyExtractor={item => item.id}
@@ -41,5 +42,18 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'flex-start',
+  },
+  flatListContainer: {
+    flexGrow: 1,
+    width: '100%', // Make sure the FlatList content container uses full width
+  },
+  title: {
+    fontSize: 20,
+    fontWeight: 'bold',
+  },
+  separator: {
+    marginVertical: 30,
+    height: 1,
+    width: '80%',
   },
 });
