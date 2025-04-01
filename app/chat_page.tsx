@@ -1,5 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
-import { Platform, StyleSheet } from 'react-native';
+import { Platform, SafeAreaView, StyleSheet } from 'react-native';
 
 import { FlatList, View } from '@/components/Themed';
 import ChatMessage from '@/components/ui/ChatMessage';
@@ -25,27 +25,20 @@ const DATA = [
 
 export default function ChatPage() {
   return (
-    <View style={styles.container}>
+    <SafeAreaView style={styles.container}>
       <FlatList
-        contentContainerStyle={styles.flatListContainer}
         data={DATA}
         renderItem={({ item }) => <ChatMessage />}
         keyExtractor={item => item.id}
       />
       <StatusBar style={Platform.OS === 'ios' ? 'light' : 'auto'} />
-    </View>
+    </SafeAreaView>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    alignItems: 'center',
-    justifyContent: 'flex-start',
-  },
-  flatListContainer: {
-    flexGrow: 1,
-    width: '100%', // Make sure the FlatList content container uses full width
   },
   title: {
     fontSize: 20,

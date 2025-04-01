@@ -26,9 +26,9 @@ const styles = StyleSheet.create({
         padding: 10,
     },
     text_container: {
-        flex: 1,
         marginLeft: 10,
         justifyContent: 'center',
+        flex: 1,
     },
     account_name: {
         fontSize: 12,
@@ -38,5 +38,7 @@ const styles = StyleSheet.create({
         fontSize: 15,
         color: 'black',
         marginTop: 4,
+        flexWrap: 'wrap',
+        flexShrink: 1,
     },
 })

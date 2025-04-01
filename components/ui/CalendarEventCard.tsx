@@ -16,8 +16,8 @@ const CalendarEventCard:FC<CalendarEventCardProps> = (props) => {
             <View style={styles.main_container}>
                 <Text style={styles.title}>{props.title}</Text>
                 <View style={styles.meta_data}>
-                    <Text style={styles.location}>Location: {props.location}</Text>
-                    <Text style={styles.orgs}>Org(s): {props.orgs.join(', ')}</Text>
+                    <Text numberOfLines={1} style={styles.location}>Location: {props.location}</Text>
+                    <Text numberOfLines={1} ellipsizeMode='tail' style={styles.orgs}>Org(s): {props.orgs.join(', ')}</Text>
                 </View>
             </View>
         </Pressable>
@@ -44,14 +44,15 @@ const styles = StyleSheet.create({
         shadowRadius: 3.84,
         elevation: 5,
         marginVertical: 5,
-        width: '90%',
+        width: '100%',
         alignSelf: 'center',
     },
     meta_data: {
         flexDirection: 'row',
         alignItems: 'center',
-        justifyContent: 'space-between',
+        justifyContent: 'flex-start',
         gap: 10,
+        maxWidth: '100%',
     },
     main_container: {
         flexDirection: 'column',
@@ -74,5 +75,6 @@ const styles = StyleSheet.create({
     },
     orgs: {
         fontSize: 10,
+        // flex: 1,
     }
 })

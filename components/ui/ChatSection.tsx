@@ -7,13 +7,13 @@ const ChatSection = () => {
     return (
         <View style={styles.container}>
             <Link href='/chat_page' style={styles.chat_section_container}>
-                <Pressable style={styles.whole_button}>
+                <View style={styles.whole_button}>
                     <CircleImage size={60}/>
                     <View style={styles.text_container}>
                         <Text style={styles.chat_name} >Group Chat</Text>
-                        <Text style={styles.chat_message} >Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum voluptatum temporibus, nisi possimus sint illum nesciunt sit animi?</Text>
+                        <Text style={styles.chat_message} numberOfLines={3}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum voluptatum temporibus, nisi possimus sint illum nesciunt sit animi?</Text>
                     </View>
-                </Pressable>
+                </View>
             </Link>
         </View>
     )
@@ -49,6 +49,7 @@ const styles = StyleSheet.create({
         flexDirection: 'column',
         alignItems: 'flex-start',
         justifyContent: 'center',
+        flex: 1,
     },
     chat_name: {
         fontSize: 16,
